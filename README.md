@@ -22,7 +22,7 @@
     - [Opera용 Tampermonkey 설치 링크](https://addons.opera.com/en/extensions/details/tampermonkey-beta/)
 
 **2.  스크립트 설치**
-  - [스크립트 설치](https://github.com/maaxx-m/TGD-To-Chzzk-link-yeok-/blob/main/%ED%8A%B8%EA%B2%8C%EB%8D%94%20%EB%A7%81%ED%81%AC%20%EB%B3%80%EA%B2%BD.user.js?raw=true)
+  - [스크립트 설치](트게더 링크 변경.user.js?raw=true)
 
 **3. 스크립트 활성화**
   - Tampermonkey의 대시보드 혹은 확장프로그램 아이콘을 눌러 나오는 메뉴의 스위치를 클릭해 활성화 해주시기 바랍니다.
