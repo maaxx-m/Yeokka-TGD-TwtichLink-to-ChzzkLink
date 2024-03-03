@@ -22,7 +22,7 @@
     - [Opera용 Tampermonkey 설치 링크](https://addons.opera.com/en/extensions/details/tampermonkey-beta/)
 
 **2.  스크립트 설치**
-  - [스크립트 설치](https://github.com/maaxx-m/Yeokka-TGD-TwtichLink-to-ChzzkLink/blob/main/%ED%8A%B8%EA%B2%8C%EB%8D%94%20%EB%A7%81%ED%81%AC%20%EB%B3%80%EA%B2%BD.user.js)
+  - [스크립트 설치](https://github.com/maaxx-m/Yeokka-TGD-TwtichLink-to-ChzzkLink/blob/main/%ED%8A%B8%EA%B2%8C%EB%8D%94%20%EB%A7%81%ED%81%AC%20%EB%B3%80%EA%B2%BD.user.js?raw=true)
 
 
 **3. 스크립트 활성화**
