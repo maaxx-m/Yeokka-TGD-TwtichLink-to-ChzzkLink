@@ -43,4 +43,4 @@
 
 ## License
 
-본 프로젝트는 MIT라이선스를 따릅니다
+본 프로젝트는 [MIT라이선스](https://github.com/maaxx-m/Yeokka-TGD-TwtichLink-to-ChzzkLink/blob/main/LICENSE)를 따릅니다
