@@ -29,7 +29,7 @@ $(document).ready(function() {
 	transition: ease all .3s;
     }
     #board-info #board-info-bottom a:nth-child(3):hover {
-    	filter: box-shadow(0 0 2px #0d3);
+    	filter: drop-shadow(0 0 2px #0d3);
      }
 	.fa.fa-twitch {
 		text-indent: -9999px;
