@@ -3,7 +3,7 @@
 // @name:ko      트게더 링크 변경
 // @name:en      TGD Twtich Link to Chzzk
 // @namespace    http://tampermonkey.net/
-// @version      2024-03-09-debugging-1411
+// @version      2024-03-09-debugging-1414
 // @description  (여까)트게더의 트위치링크를 치지직 링크로 변경
 // @author       Maaxx
 // @match        *https://tgd.kr/s/yeokka*
@@ -12,51 +12,17 @@
 // @run-at       document-end
 // ==/UserScript==
 /* global $ */
-// add jQuery
-function addJQuery(callback) {
-    var script = document.createElement("script");
-    script.setAttribute("src", "//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js");
-    script.addEventListener('load', function() {
-        var script = document.createElement("script");
-        script.textContent = "window.jQ=jQuery.noConflict(true);(" + callback.toString() + ")();";
-        document.body.appendChild(script);
-    }, false);
-    document.body.appendChild(script);
-}
-function main(){
-    $(document).ready(function()
-                      {
-                          setTimeout(function(){
-                              /*$('.fluid_types').val('Liquid');
-                              $('.fluid_types').triggerHandler('change');
-                              setTimeout(function(){
-                                  $('.fluids').val('Ammonia');
-                              },500);*/
-                              $('.fluid_types').triggerHandler('change');
-                              $('.flow_unit_1').val('lb');
-                              $('.flow_unit_2').val('sec');
-                              $('.min_flow').val(1);
-                              $('.nom_flow').val(2);
-                              $('.max_flow').val(8);
-                              $('.min_temp').val(280);
-                              $('.nom_temp').val(280);
-                              $('.max_temp').val(280);
-                              //$('.min_press').val(10);
-                              //$('.nom_press').val(10);
-                              //$('.max_press').val(20);
-                              setTimeout(function(){
-                                  $('#button_calc').triggerHandler('click');
-                                  setTimeout(function(){
-                                      $('.icon_size').triggerHandler('click');
-                                  },500);
-                              },500);
-                          },2000);
-                      });
-}
-// load jQuery and execute the main function
-addJQuery(main);
-
-(function() {
+function main(data){
+// append jquery script to head
+const head = document.head || document.getElementsByTagName('head')[0],
+s = document.createElement('script');
+s.type = 'text/javascript';
+s.innerHTML = data;
+head.appendChild(s);
+// if page is fully loaded execute your program
+$(document).ready(function() {
+'use strict'
+/* main scripts */
 //add css to link
     var cssChzzk=`
     <style type="text/css">
@@ -82,5 +48,6 @@ addJQuery(main);
     `;
 /* main script */
     $('head').append(cssChzzk)
-    $('#board-info-bottom a:nth-child(3)').attr('href', 'https://chzzk.naver.com/3c9fe16c70cf2f4a5274fa69307f0f89');
+    $('#board-info-bottom a:nth-child(3)').attr('href', 'https://chzzk.naver.com/3c9fe16c70cf2f4a5274fa69307f0f89');	
 });
+}
