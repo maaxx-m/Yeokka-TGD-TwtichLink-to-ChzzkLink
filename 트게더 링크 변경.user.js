@@ -12,15 +12,6 @@
 // @run-at	 document-idle
 // @license	 MIT
 // ==/UserScript==
-/* global $ */
-function main(data){
-// append jquery script to head
-const head = document.head || document.getElementsByTagName('head')[0],
-s = document.createElement('script');
-s.type = 'text/javascript';
-s.innerHTML = data;
-head.appendChild(s);
-// if page is fully loaded execute your program
 (function() {
 //add css to link
     var cssChzzk=`
@@ -49,19 +40,3 @@ head.appendChild(s);
     $('head').append(cssChzzk)
     $('#board-info-bottom a:nth-child(3)').attr('href', 'https://chzzk.naver.com/3c9fe16c70cf2f4a5274fa69307f0f89');
 });
-
-// Get html text of the url
-// main runs as soon as the site responds with status 200
-function httpGET(url, callback, responseType='text') {
-var request = new XMLHttpRequest();
-request.responseType = responseType;
-request.onreadystatechange = function () {
-if (this.readyState == 4 && this.status == 200) {
-callback(this.response);
-}
-};
-request.open('GET', url, true);
-request.send(null);
-};
-// Type in full url and the callback function
-httpGET('https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js', main);
