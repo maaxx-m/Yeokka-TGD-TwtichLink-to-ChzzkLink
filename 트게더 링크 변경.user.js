@@ -10,6 +10,8 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tgd.kr
 // @grant        none
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
+// @run-at	 document-end
+// @license	 MIT
 // ==/UserScript==
 /* global $ */
 function main(data){
@@ -20,7 +22,7 @@ s.type = 'text/javascript';
 s.innerHTML = data;
 head.appendChild(s);
 // if page is fully loaded execute your program
-$(window).ready(function() {
+(function() {
 //add css to link
     var cssChzzk=`
     <style type="text/css">
