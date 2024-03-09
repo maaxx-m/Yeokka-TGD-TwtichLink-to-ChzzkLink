@@ -10,7 +10,6 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tgd.kr
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
 // @run-at       document-idle
-// @license      MIT
 // ==/UserScript==
 (function() {
 //add css to link
