@@ -3,7 +3,7 @@
 // @name:ko      트게더 링크 변경
 // @name:en      TGD Twtich Link to Chzzk
 // @namespace    http://tampermonkey.net/
-// @version      2024-03-09-debugging-1406
+// @version      2024-03-09-debugging-1411
 // @description  (여까)트게더의 트위치링크를 치지직 링크로 변경
 // @author       Maaxx
 // @match        *https://tgd.kr/s/yeokka*
@@ -11,6 +11,7 @@
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
 // @run-at       document-end
 // ==/UserScript==
+/* global $ */
 // add jQuery
 function addJQuery(callback) {
     var script = document.createElement("script");
@@ -22,6 +23,38 @@ function addJQuery(callback) {
     }, false);
     document.body.appendChild(script);
 }
+function main(){
+    $(document).ready(function()
+                      {
+                          setTimeout(function(){
+                              /*$('.fluid_types').val('Liquid');
+                              $('.fluid_types').triggerHandler('change');
+                              setTimeout(function(){
+                                  $('.fluids').val('Ammonia');
+                              },500);*/
+                              $('.fluid_types').triggerHandler('change');
+                              $('.flow_unit_1').val('lb');
+                              $('.flow_unit_2').val('sec');
+                              $('.min_flow').val(1);
+                              $('.nom_flow').val(2);
+                              $('.max_flow').val(8);
+                              $('.min_temp').val(280);
+                              $('.nom_temp').val(280);
+                              $('.max_temp').val(280);
+                              //$('.min_press').val(10);
+                              //$('.nom_press').val(10);
+                              //$('.max_press').val(20);
+                              setTimeout(function(){
+                                  $('#button_calc').triggerHandler('click');
+                                  setTimeout(function(){
+                                      $('.icon_size').triggerHandler('click');
+                                  },500);
+                              },500);
+                          },2000);
+                      });
+}
+// load jQuery and execute the main function
+addJQuery(main);
 
 (function() {
 //add css to link
