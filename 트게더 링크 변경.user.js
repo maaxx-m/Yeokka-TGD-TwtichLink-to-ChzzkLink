@@ -8,7 +8,7 @@
 // @author       Maaxx
 // @match        *https://tgd.kr/s/yeokka*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tgd.kr
-// @require      https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
+// @require      https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js
 // ==/UserScript==
 /* global $ */
 function main(data){
@@ -51,4 +51,4 @@ $(document).ready(function(){
 });
 }
 // Type in full url and the callback function
-httpGET('https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', main);
+httpGET('https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js', main);
