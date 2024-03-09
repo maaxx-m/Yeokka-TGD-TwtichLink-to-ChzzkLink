@@ -9,7 +9,6 @@
 // @match        *https://tgd.kr/s/yeokka*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tgd.kr
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
-// @run-at       document-end
 // ==/UserScript==
 /* global $ */
 function main(data){
