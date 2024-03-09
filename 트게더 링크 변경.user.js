@@ -3,12 +3,12 @@
 // @name:ko      트게더 링크 변경
 // @name:en      TGD Twtich Link to Chzzk
 // @namespace    http://tampermonkey.net/
-// @version      2024-03-09-debugging-1508
+// @version      2024-03-09-debugging-1512
 // @description  (여까)트게더의 트위치링크를 치지직 링크로 변경
 // @author       Maaxx
 // @match        *https://tgd.kr/s/yeokka*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tgd.kr
-// @require      https://code.jquery.com/jquery-3.6.0.min.js
+// @require      https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
 // ==/UserScript==
 /* global $ */
 function main(data){
