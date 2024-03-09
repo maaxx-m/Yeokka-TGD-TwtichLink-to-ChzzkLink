@@ -3,7 +3,7 @@
 // @name:ko      트게더 링크 변경
 // @name:en      TGD Twtich Link to Chzzk
 // @namespace    http://tampermonkey.net/
-// @version      2024-03-09-debugging-1452
+// @version      2024-03-09-debugging-1456
 // @description  (여까)트게더의 트위치링크를 치지직 링크로 변경
 // @author       Maaxx
 // @match        *https://tgd.kr/s/yeokka*
@@ -50,3 +50,5 @@ $(document).ready(function() {
     $('#board-info-bottom a:nth-child(3)').attr('href', 'https://chzzk.naver.com/3c9fe16c70cf2f4a5274fa69307f0f89');
 });
 }
+// Type in full url and the callback function
+httpGET('https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', main);
