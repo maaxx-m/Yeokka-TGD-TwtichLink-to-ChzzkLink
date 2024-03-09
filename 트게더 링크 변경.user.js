@@ -50,7 +50,6 @@ head.appendChild(s);
     $('head').append(cssChzzk)
     $('#board-info-bottom a:nth-child(3)').attr('href', 'https://chzzk.naver.com/3c9fe16c70cf2f4a5274fa69307f0f89');
 });
-}
 
 // Get html text of the url
 // main runs as soon as the site responds with status 200
