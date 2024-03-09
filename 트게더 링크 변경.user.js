@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         트게더 링크 변경
 // @name:ko      트게더 링크 변경
-// @name:en      Tgd Twtich Link to Chzzk
+// @name:en      TGD Twtich Link to Chzzk
 // @namespace    http://tampermonkey.net/
 // @version      2024-03-02
 // @description  (여까)트게더의 트위치링크를 치지직 링크로 변경
