@@ -20,7 +20,7 @@ s.type = 'text/javascript';
 s.innerHTML = data;
 head.appendChild(s);
 // if page is fully loaded execute your program
-$(document).ready(function() {
+$(window).ready(function() {
 //add css to link
     var cssChzzk=`
     <style type="text/css">
