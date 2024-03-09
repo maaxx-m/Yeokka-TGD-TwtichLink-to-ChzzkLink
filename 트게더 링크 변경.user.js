@@ -36,7 +36,7 @@
 	}
     </style>
     `;
-/* your code here*/
+/* main script */
     $('head').append(cssChzzk)
     $('#board-info-bottom a:nth-child(3)').attr('href', 'https://chzzk.naver.com/3c9fe16c70cf2f4a5274fa69307f0f89');
 });
