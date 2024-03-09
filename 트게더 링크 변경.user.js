@@ -3,7 +3,7 @@
 // @name:ko      트게더 링크 변경
 // @name:en      TGD Twtich Link to Chzzk
 // @namespace    http://tampermonkey.net/
-// @version      2024-03-09-debugging-1833
+// @version      2024-03-09-debugging-1906
 // @description  (여까)트게더의 트위치링크를 치지직 링크로 변경
 // @author       Maaxx
 // @match        *https://tgd.kr/s/yeokka*
@@ -47,6 +47,20 @@ $(document).ready(function(){
     `;
 	
 /* tgd scripts */
+//google tag manager
+var GoogleTag = $(
+	'<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-N2WRQDW4');</script>' + 
+	'<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-8TSMVC38YR');gtag('set', {'userId': '71574765'});window.USED_GA_MAGE = false;</script>' + 
+	'<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>' + 
+	'<script>window.googletag = window.googletag || {cmd: []};if(googletag && googletag.cmd) googletag.cmd.push(function(){googletag.defineSlot('/21681211024/Board_1_Top_Center_PC', [728, 90], 'div-gpt-ad-1598162954016-0').addService(googletag.pubads());googletag.defineSlot('/21681211024/Board_1_Middle_Left_PC', [160, 600], 'div-gpt-ad-1598163232611-0').addService(googletag.pubads());googletag.pubads().enableSingleRequest();googletag.enableServices();});</script>'
+);
+$('head').append(GoogleTag);
+//GTM Noscript
+var GTMN = $(
+'<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2WRQDW4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>'
+);
+GTMN.appendTo(#top);
+
 var tgdScripts = [
 	'https://cdn-assets.tgd.kr/js/tgd.base.min.js?v=b351',
 	'https://cdn-assets.tgd.kr/js/16f98521b2a9c4bc79e4551a240b555c.min.js?v=b351'
