@@ -49,7 +49,6 @@ $(document).ready(function(){
 /* tgd scripts */
 var tgdScripts = [
 	'https://cdn-assets.tgd.kr/js/tgd.base.min.js?v=b351',
-	'https://cdn-assets.tgd.kr/js/1145f263256c923716d2b8eade2f6689.min.js?v=b351',
 	'https://cdn-assets.tgd.kr/js/16f98521b2a9c4bc79e4551a240b555c.min.js?v=b351'
 	];
 for (var i = 0; i < tgdScripts.length; i++) {
