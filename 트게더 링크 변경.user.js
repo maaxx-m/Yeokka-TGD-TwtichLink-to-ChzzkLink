@@ -3,7 +3,7 @@
 // @name:ko      트게더 링크 변경
 // @name:en      TGD Twtich Link to Chzzk
 // @namespace    http://tampermonkey.net/
-// @version      2024-03-10-2016
+// @version      2024-03-10-revert-2017
 // @description  (여까)트게더의 트위치링크를 치지직 링크로 변경
 // @author       Maaxx
 // @match        *https://tgd.kr/s/yeokka*
@@ -17,9 +17,7 @@ s = document.createElement('script');
 s.type = 'text/javascript';
 s.innerHTML = data;
 head.appendChild(s);
-// if page is fully loaded execute your program
-$(document).ready(function(){
-'use strict'
+
 /* main scripts */
 //add css to link
 var cssChzzk=`
